@@ -17,12 +17,17 @@ def cleanup():
 		subprocess.call([killPidCmd], shell=True)
 
 
-def run(ape_active, file_name):
+def run(ape_active, disable_flash, file_name):
 	chop = webdriver.ChromeOptions()
 	cookies = []
 
 	if ape_active:
 		chop.add_argument("--load-extension=" + "../ext") # This adds extension
+
+	if disable_flash:
+		chop.add_argument("--disable-bundled-ppapi-flash")
+		chop.add_argument("--disable-internal-flash")
+		chop.add_argument("--disable-plugins")
 
 	# Start chromedriver
 	if os.uname()[0] == "Darwin":
@@ -30,7 +35,7 @@ def run(ape_active, file_name):
 
 	f = open("alexa-top-10000-global.txt", 'r')
 
-	for i in range(0,1):
+	for i in range(0,100):
 		try:
 			driver.get("http://www." + f.readline().strip())
 		except:
@@ -76,19 +81,32 @@ def reduction(c):
 
 
 if __name__=="__main__":
-	run(True, "output/test.txt")
-	run(True, "output/test.txt")
-	run(False, "output/test.txt")
-	run(False, "output/test.txt")
+	run(False, False, "output/2-cookies_100_flash_1.txt")
+	run(False, False, "output/2-cookies_100_flash_2.txt")
+	run(False, False, "output/3-cookies_100_flash_1.txt")
+	run(False, False, "output/3-cookies_100_flash_2.txt")
+	run(False, False, "output/4-cookies_100_flash_1.txt")
+	run(False, False, "output/4-cookies_100_flash_2.txt")
+	run(False, False, "output/5-cookies_100_flash_1.txt")
+	run(False, False, "output/5-cookies_100_flash_2.txt")
 
-	# run(False, "output/2-cookies_100_flash_1.txt")
-	# run(False, "output/2-cookies_100_flash_2.txt")
-	# run(False, "output/3-cookies_100_flash_1.txt")
-	# run(False, "output/3-cookies_100_flash_2.txt")
-	# run(False, "output/4-cookies_100_flash_1.txt")
-	# run(False, "output/4-cookies_100_flash_2.txt")
-	# run(False, "output/5-cookies_100_flash_1.txt")
-	# run(False, "output/5-cookies_100_flash_2.txt")
+	# run(True, True, "output/2-cookies_100_noflash_APE_1.txt")
+	# run(True, True, "output/2-cookies_100_noflash_APE_2.txt")
+	# run(True, True, "output/3-cookies_100_noflash_APE_1.txt")
+	# run(True, True, "output/3-cookies_100_noflash_APE_2.txt")
+	# run(True, True, "output/4-cookies_100_noflash_APE_1.txt")
+	# run(True, True, "output/4-cookies_100_noflash_APE_2.txt")
+	# run(True, True, "output/5-cookies_100_noflash_APE_1.txt")
+	# run(True, True, "output/5-cookies_100_noflash_APE_2.txt")
+
+	# run(False, True, "output/2-cookies_100_noflash_1.txt")
+	# run(False, True, "output/2-cookies_100_noflash_2.txt")
+	# run(False, True, "output/3-cookies_100_noflash_1.txt")
+	# run(False, True, "output/3-cookies_100_noflash_2.txt")
+	# run(False, True, "output/4-cookies_100_noflash_1.txt")
+	# run(False, True, "output/4-cookies_100_noflash_2.txt")
+	# run(False, True, "output/5-cookies_100_noflash_1.txt")
+	# run(False, True, "output/5-cookies_100_noflash_2.txt")
 
 
 	
