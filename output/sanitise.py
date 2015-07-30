@@ -1,18 +1,18 @@
-filenames = ["2_cookies_100_flash_APE_2.text",
-			 "3_cookies_100_flash_APE_1.text",
-			 "3_cookies_100_flash_APE_2.text",
-			 "4_cookies_100_flash_APE_1.text",
-			 "4_cookies_100_flash_APE_2.text",
-			 "5_cookies_100_flash_APE_1.text",
-			 "5_cookies_100_flash_APE_2.text",
-			 "6_cookies_100_flash_APE_1.text",
-			 "6_cookies_100_flash_APE_2.text",
-			 "7_cookies_100_flash_APE_1.text",
-			 "7_cookies_100_flash_APE_2.text",
-			 "8_cookies_100_flash_APE_1.text",
-			 "8_cookies_100_flash_APE_2.text",
-			 "9_cookies_100_flash_APE_1.text",
-			 "9_cookies_100_flash_APE_2.text"]
+filenames = ["2-cookies_100_flash_APE_2.txt",
+			 "3-cookies_100_flash_APE_1.txt",
+			 "3-cookies_100_flash_APE_2.txt",
+			 "4-cookies_100_flash_APE_1.txt",
+			 "4-cookies_100_flash_APE_2.txt",
+			 "5-cookies_100_flash_APE_1.txt",
+			 "5-cookies_100_flash_APE_2.txt",
+			 "6-cookies_100_flash_APE_1.txt",
+			 "6-cookies_100_flash_APE_2.txt",
+			 "7-cookies_100_flash_APE_1.txt",
+			 "7-cookies_100_flash_APE_2.txt",
+			 "8-cookies_100_flash_APE_1.txt",
+			 "8-cookies_100_flash_APE_2.txt",
+			 "9-cookies_100_flash_APE_1.txt",
+			 "9-cookies_100_flash_APE_2.txt"]
 
 for filename in filenames:
 	f = open(filename, 'r+')
