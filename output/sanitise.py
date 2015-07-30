@@ -17,7 +17,7 @@ filenames = ["2-cookies_100_flash_APE_2.txt",
 for filename in filenames:
 	f = open(filename, 'r+')
 	text = f.read()
-	text = text.replace("[[], ","").replace("]]","").replace(" [], ","").replace("], [",",")
+	text = text.replace("[[], ","").replace("]]","]").replace(" [], ","").replace("], [",",")
 	f.seek(0)
 	f.write(text)
 	f.truncate()

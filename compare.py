@@ -35,10 +35,10 @@ def reduction(c):
 
 if __name__=="__main__":
 
-	with open("output/2-cookies_100_flash_APE_1.txt") as f:
+	with open("output/9-cookies_100_flash_APE_1.txt") as f:
 		a = f.read()
 
-	with open("output/2-cookies_100_flash_APE_2.txt") as f:
+	with open("output/9-cookies_100_flash_APE_2.txt") as f:
 		b = f.read()
 
 	reduction(compare(a,b))
