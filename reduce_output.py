@@ -1,6 +1,6 @@
 import json
 
-with open("compare_100_flash_APE_output.txt") as f:
+with open("compare_100_flash_output.txt") as f:
 	x = json.loads(f.read())
 
 for key, value in x.iteritems():
