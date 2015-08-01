@@ -23,22 +23,29 @@ def compare(a, b):
 
 def reduction(c):
 	x = json.loads(c)
+	results = ""
 
 	for key, value in x.iteritems():
 	    for cookie in value['c1']:
 	    	for cookie2 in value['c2']:
 	    		if cookie['name'] == cookie2['name']:
 	    			if cookie['value'] == cookie2['value']:
-	    				print key, cookie['name']
-	    				print "\t" + cookie['value']
+	    				results += "\n" + key + " " + cookie['name'] + "\n\t" + cookie['value']
 
+	return results
 
 if __name__=="__main__":
+	cases = ["flash", "flash_APE", "noflash", "noflash_APE"]
 
-	with open("output/9-cookies_100_flash_APE_1.txt") as f:
-		a = f.read()
+	for i in range (1,7):
+		for case in cases:
+			with open("output/%d-cookies_100_%s_1.txt" % (i, case)) as f:
+				a = f.read()
 
-	with open("output/9-cookies_100_flash_APE_2.txt") as f:
-		b = f.read()
+			with open("output/%d-cookies_100_%s_2.txt" % (i, case)) as f:
+				b = f.read()
 
-	reduction(compare(a,b))
+			with open("results/%d_%s" % (i,case), "w") as f:
+				f.write(reduction(compare(a,b)))
+
+			
