@@ -35,7 +35,7 @@ def run(ape_active, disable_flash, file_name):
 
 	f = open("alexa-top-10000-global.txt", 'r')
 
-	for i in range(0,100):
+	for i in range(0,99):
 		try:
 			driver.get("http://www." + f.readline().strip())
 		except:
@@ -75,14 +75,14 @@ if __name__=="__main__":
 	# run(False, True, "output/5-cookies_100_noflash_1.txt")
 	# run(False, True, "output/5-cookies_100_noflash_2.txt")
 
-	run(False, False, "output/6-cookies_100_flash_1.txt")
-	run(False, False, "output/6-cookies_100_flash_2.txt")
-	run(False, False, "output/7-cookies_100_flash_1.txt")
-	run(False, False, "output/7-cookies_100_flash_2.txt")
-	run(False, False, "output/8-cookies_100_flash_1.txt")
-	run(False, False, "output/8-cookies_100_flash_2.txt")
-	run(False, False, "output/9-cookies_100_flash_1.txt")
-	run(False, False, "output/9-cookies_100_flash_2.txt")
+	# run(False, False, "output/6-cookies_100_flash_1.txt")
+	# run(False, False, "output/6-cookies_100_flash_2.txt")
+	# run(False, False, "output/7-cookies_100_flash_1.txt")
+	# run(False, False, "output/7-cookies_100_flash_2.txt")
+	# run(False, False, "output/8-cookies_100_flash_1.txt")
+	# run(False, False, "output/8-cookies_100_flash_2.txt")
+	# run(False, False, "output/9-cookies_100_flash_1.txt")
+	# run(False, False, "output/9-cookies_100_flash_2.txt")
 
 	# run(True, True, "output/6-cookies_100_noflash_APE_1.txt")
 	# run(True, True, "output/6-cookies_100_noflash_APE_2.txt")
@@ -90,17 +90,17 @@ if __name__=="__main__":
 	# run(True, True, "output/7-cookies_100_noflash_APE_2.txt")
 	# run(True, True, "output/8-cookies_100_noflash_APE_1.txt")
 	# run(True, True, "output/8-cookies_100_noflash_APE_2.txt")
-	# run(True, True, "output/9-cookies_100_noflash_APE_1.txt")
-	# run(True, True, "output/9-cookies_100_noflash_APE_2.txt")
+	#run(True, True, "output/9-cookies_100_noflash_APE_1.txt") # TODO
+	#run(True, True, "output/9-cookies_100_noflash_APE_2.txt") # TODO
 
 	# run(False, True, "output/6-cookies_100_noflash_1.txt")
 	# run(False, True, "output/6-cookies_100_noflash_2.txt")
 	# run(False, True, "output/7-cookies_100_noflash_1.txt")
-	# run(False, True, "output/7-cookies_100_noflash_2.txt")
-	# run(False, True, "output/8-cookies_100_noflash_1.txt")
-	# run(False, True, "output/8-cookies_100_noflash_2.txt")
-	# run(False, True, "output/9-cookies_100_noflash_1.txt")
-	# run(False, True, "output/9-cookies_100_noflash_2.txt")
+	run(False, True, "output/7-cookies_100_noflash_2.txt")
+	run(False, True, "output/8-cookies_100_noflash_1.txt")
+	run(False, True, "output/8-cookies_100_noflash_2.txt")
+	run(False, True, "output/9-cookies_100_noflash_1.txt")
+	run(False, True, "output/9-cookies_100_noflash_2.txt")
 
 
 	
