@@ -104,14 +104,14 @@ if __name__=="__main__":
 	#run(False, True, "output/9-cookies_100_noflash_1.txt") 
 	#run(False, True, "output/9-cookies_100_noflash_2.txt") 
 
-	run(False, False, "output/10-cookies_100_flash_1.txt") 
-	run(False, False, "output/10-cookies_100_flash_2.txt") 
+	#run(False, False, "output/10-cookies_100_flash_1.txt") 
+	#run(False, False, "output/10-cookies_100_flash_2.txt") 
 
-	# run(False, True, "output/10-cookies_100_noflash_1.txt") # todo
-	# run(False, True, "output/10-cookies_100_noflash_2.txt") # todo
+	#run(False, True, "output/10-cookies_100_noflash_1.txt") 
+	#run(False, True, "output/10-cookies_100_noflash_2.txt") 
 
-	# run(True, False, "output/10-cookies_100_flash_APE_1.txt") # todo
-	# run(True, False, "output/10-cookies_100_flash_APE_2.txt") # todo
+	run(True, False, "output/10-cookies_100_flash_APE_1.txt") # todo
+	run(True, False, "output/10-cookies_100_flash_APE_2.txt") # todo
   
 	#run(True, True, "output/10-cookies_100_noflash_APE_1.txt") 
 	#run(True, True, "output/10-cookies_100_noflash_APE_2.txt") 
