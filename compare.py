@@ -37,7 +37,7 @@ def reduction(c):
 if __name__=="__main__":
 	cases = ["flash", "flash_APE", "noflash", "noflash_APE"]
 
-	for i in range (1,7):
+	for i in range (2,7):
 		for case in cases:
 			with open("output/%d-cookies_100_%s_1.txt" % (i, case)) as f:
 				a = f.read()
@@ -46,6 +46,10 @@ if __name__=="__main__":
 				b = f.read()
 
 			with open("results/%d_%s" % (i,case), "w") as f:
-				f.write(reduction(compare(a,b)))
+				try:
+					f.write(reduction(compare(a,b)))
+				except ValueError as e:
+					print "error: results/%d_%s" % (i,case)
+					print e
 
 			

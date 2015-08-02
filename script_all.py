@@ -90,17 +90,31 @@ if __name__=="__main__":
 	# run(True, True, "output/7-cookies_100_noflash_APE_2.txt")
 	# run(True, True, "output/8-cookies_100_noflash_APE_1.txt")
 	# run(True, True, "output/8-cookies_100_noflash_APE_2.txt")
-	#run(True, True, "output/9-cookies_100_noflash_APE_1.txt") # TODO
-	#run(True, True, "output/9-cookies_100_noflash_APE_2.txt") # TODO
+
+	#run(True, True, "output/9-cookies_100_noflash_APE_1.txt")
+	#run(True, True, "output/9-cookies_100_noflash_APE_2.txt") 
 
 	# run(False, True, "output/6-cookies_100_noflash_1.txt")
 	# run(False, True, "output/6-cookies_100_noflash_2.txt")
 	# run(False, True, "output/7-cookies_100_noflash_1.txt")
-	run(False, True, "output/7-cookies_100_noflash_2.txt")
-	run(False, True, "output/8-cookies_100_noflash_1.txt")
-	run(False, True, "output/8-cookies_100_noflash_2.txt")
-	run(False, True, "output/9-cookies_100_noflash_1.txt")
-	run(False, True, "output/9-cookies_100_noflash_2.txt")
+	# run(False, True, "output/7-cookies_100_noflash_2.txt")
+	# run(False, True, "output/8-cookies_100_noflash_1.txt")
+	# run(False, True, "output/8-cookies_100_noflash_2.txt")
+
+	#run(False, True, "output/9-cookies_100_noflash_1.txt") 
+	#run(False, True, "output/9-cookies_100_noflash_2.txt") 
+
+	run(False, False, "output/10-cookies_100_flash_1.txt") 
+	run(False, False, "output/10-cookies_100_flash_2.txt") 
+
+	# run(False, True, "output/10-cookies_100_noflash_1.txt") # todo
+	# run(False, True, "output/10-cookies_100_noflash_2.txt") # todo
+
+	# run(True, False, "output/10-cookies_100_flash_APE_1.txt") # todo
+	# run(True, False, "output/10-cookies_100_flash_APE_2.txt") # todo
+  
+	#run(True, True, "output/10-cookies_100_noflash_APE_1.txt") 
+	#run(True, True, "output/10-cookies_100_noflash_APE_2.txt") 
 
 
 	
