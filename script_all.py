@@ -6,17 +6,6 @@ from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 import json
 
-
-def cleanup():
-	grepCmd = "ps -aef | grep -E 'chromedriver|Chrome'"
-	grepResults = subprocess.check_output([grepCmd], shell=True).split()
-
-	for i in range(1,len(grepResults)):
-		pid = grepResults[i]
-		killPidCmd = "kill -9 " + pid
-		subprocess.call([killPidCmd], shell=True)
-
-
 def run(ape_active, disable_flash, file_name):
 	chop = webdriver.ChromeOptions()
 	cookies = []
@@ -35,7 +24,7 @@ def run(ape_active, disable_flash, file_name):
 
 	f = open("alexa-top-10000-global.txt", 'r')
 
-	for i in range(0,99):
+	for i in range(0,100):
 		try:
 			driver.get("http://www." + f.readline().strip())
 		except:
