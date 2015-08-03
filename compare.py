@@ -37,7 +37,7 @@ def reduction(c):
 if __name__=="__main__":
 	cases = ["flash", "flash_APE", "noflash", "noflash_APE"]
 
-	for i in range (2,7):
+	for i in range (10,11):
 		for case in cases:
 			with open("output/%d-cookies_100_%s_1.txt" % (i, case)) as f:
 				a = f.read()
