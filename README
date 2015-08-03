@@ -1,0 +1,6 @@
+script_all.py is the main script to run the tests, see the main section for past tests.
+
+output/sanitise.py needs to be run on the output to tidy up the data before comparison
+
+compare.py will compare the two sets of cookies and output a list of cookies restored across two sessions,
+    see the main loop which iterates over files in output directory based on ints hardcoded by the user 
